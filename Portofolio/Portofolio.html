@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portofolio</title>
+	<link rel="stylesheet" type="text/css" href="CSS/portofolio.css">
+	<link rel="stylesheet" type="text/css" href="CSS/gallery foto.css">
+	<script src="JS/anime.min.js"></script>
+</head>
+<body>
+	<!--header-->
+	<h1 id="hed">Portofolio</h1>
+	<!--tombol-->
+	<div id="tombol">
+	<button id="tekan" name="btn">About</button>
+	<button id="tekan2" name="btn">My Design</button>
+	<button id="tekan4" name="btn">Certificate</button>
+	<a href="HTML/Web Design.html" target="_blank"><button id="tekan6" name="btn">Simple Web Design</button></a>
+	</div>
+	<!--about-->
+	<div id="tentang">
+		<h1 class="log">Who am I?</h1>
+		<form>
+			<span><img class="foto" src="img/2.jpg"></span><br>
+			<p class="tentang">Name : Didin Firmansyah</p>
+			<p class="tentang">Age  : 21 years old</p>
+			<p class="tentang">Status : College Student</p>
+			<p class="tentang">Contact : 0856-5924-8706</p>
+			<p class="tentang">Email : Dfirmansyah058@gmail.com</p>
+			<p class="tentang">Hobby : Reading Novel and Manga</p>
+			<p class="tentang">Ability : <b>HTML,CSS,JS,PYTHON,PHOTOSHOP, ADOBE ILUSTRATOR</b></p>
+			<p class="gobak"><a  id="goback">Go Back</a></p>
+		</form>
+	</div>
+	<!--quote1-->
+	<h1 id="q1">"Practice makes us right, repetitions make us perfect."</h1>
+	<!--certificate-->
+	<h1 id="cert" style="font-size: 50px;">Certificate</h1>
+	<div id="certificate">
+		<div id="gallery">
+		<a target="_blank" href="img/dicoding.png"><img src="img/dicoding.png"></a>
+		<div id="ket">Dasar Pemrograman Web</div>
+		</div>
+		<div id="gallery">
+		<a target="_blank" href="img/IMG_0021.jpg"><img src="img/IMG_0021.jpg"></a>
+		<div id="ket">English Debate</div>
+		</div>
+		<div id="gallery">
+		<a target="_blank" href="img/IMG_0010.jpg"><img src="img/IMG_0010.jpg"></a>
+		<div id="ket">EPTFL Certificate</div>
+		</div>
+		<div id="gallery">
+		<a target="_blank" href="img/IMG_0025.jpg"><img src="img/IMG_0025.jpg"></a>
+		<div id="ket">English Research Centre Interview</div>
+		</div>
+		<div id="gallery">
+		<a target="_blank" href="img/Scan.jpg"><img src="img/Scan.jpg"></a>
+		<div id="ket">Cloud Computing Public Lecture</div>
+		</div>
+		<div id="gallery">
+		<a target="_blank" href="img/IMG_0007.jpg"><img src="img/IMG_0007.jpg"></a>
+		<div id="ket">Annual Students English Competition</div>
+		</div>
+		<div id="gallery">
+		<a target="_blank" href="img/IMG_0019.jpg"><img src="img/IMG_0019.jpg"></a>
+		<div id="ket">Annual Students Competition Commitee 2016</div>
+		</div>
+		<div id="gallery">
+		<a target="_blank" href="img/IMG_0020.jpg"><img src="img/IMG_0020.jpg"></a>
+		<div id="ket">Annual Students Competition Commitee 2015</div>
+		</div>
+		<div id="gallery">
+		<a target="_blank" href="img/IMG_0008.jpg"><img src="img/IMG_0008.jpg"></a>
+		<div id="ket">Annual Students Competition Commitee 2015</div>
+		</div>
+		<div id="gallery">
+		<a target="_blank" href="img/IMG_0011.jpg"><img src="img/IMG_0011.jpg"></a>
+		<div id="ket">Vice Chairman Certificate</div>
+		</div>
+		<div id="gallery">
+		<a target="_blank" href="img/IMG_0014.jpg"><img src="img/IMG_0014.jpg"></a>
+		<div id="ket">Vice Chairman Certificate</div>
+		</div>
+		<p class="gobakk"><a  id="goback3">Go Back</a></p>
+	</div>
+
+	<!--svg-->
+	<svg viewBox="0 0 1058.585 517.352">
+	<polygon class="polymorph" fill="#00AEEF" points="908.079,86.039 242.423,45.635 0,0 814.141,0 1058.585,0 1058.585,157.756 "/>
+	</svg>
+	<script type="text/javascript">
+		var morphing = anime({
+		  targets: '.polymorph',
+		  points: [
+		    { value: '1058.585,517.352 0,517.352 0,0 242.423,0 1058.585,0 ' },
+		  ],
+		  easing: 'easeOutQuad',
+		  duration: 2000,
+		  loop: false
+		});
+		var btn=document.getElementById('tekan');
+		var goback=document.getElementById('goback');
+		btn.onclick= function slide1() {
+			var morphing = anime({
+		  targets: '.polymorph',
+		  points: [
+		    { value: '1058.585,517.352 0,517.352 0,0 101.009,101.19 338.383,329.473 ' },
+		  ],
+		  easing: 'easeOutQuad',
+		  duration: 2000,
+		  loop: false
+		});
+			anime({
+				targets:'#tekan',
+				opacity:0,
+				duration:500
+			})
+			anime({
+				targets:'#tekan2',
+				opacity:0,
+				duration:500
+			})
+			anime({
+				targets:'#tekan4',
+				opacity:0,
+				duration:500
+			})
+			anime({
+				targets:'#tekan6',
+				opacity:0,
+				duration:500
+			})
+			anime({
+				targets:'#hed',
+				opacity:0,
+				duration:500
+			})
+			anime({
+				targets:'#tentang',
+				opacity:1,
+				duration:500,
+				translateX:400
+			})
+			anime({
+				targets:'#q1',
+				opacity:1,
+				translateX:100
+			})
+			var promise = morphing.finished.then(()=>{
+				goback.onclick=function() {
+					var morphing = anime({
+				  targets: '.polymorph',
+				  points: [
+				    { value: ' 1058.585,517.352 0,517.352 0,0 242.423,0 1058.585,0' },
+				  ],
+				  easing: 'easeOutQuad',
+				  duration: 2000,
+				  loop: false
+				});
+					anime({
+						targets:'#tentang',
+						opacity:0
+					})
+					anime({
+						targets:'#hed',
+						opacity:1
+					})
+					anime({
+						targets:'#tekan',
+						opacity:1
+					})
+					anime({
+						targets:'#tekan4',
+						opacity:1,
+						duration:500
+					})
+					anime({
+						targets:'#tekan6',
+						opacity:1,
+						duration:500
+					})
+					anime({
+						targets:'#q1',
+						opacity:0
+					})
+					anime({
+						targets:'#tekan2',
+						opacity:1,
+						duration:500
+					})
+				}
+			});
+
+		}
+		var daf=document.getElementById('daf');
+		daf.onclick=function slide4() {
+			var morphing=anime({
+				  targets: '.polymorph',
+				  points: [
+				    { value: '1058.585,517.352 0,517.352 788.888,314.322 992.928,79.979 1058.585,0' },
+				  ],
+				  easing: 'easeOutQuad',
+				  duration: 2000,
+				  loop: false
+				});
+				anime({
+					targets:'#login',
+					opacity:0
+				})
+				anime({
+					targets:'#q1',
+					opacity:0
+				})
+				anime({
+				targets:'#design',
+				opacity:1,
+				duration:500,
+				translateX:-200
+			})
+			anime({
+				targets:'#q2',
+				opacity:1,
+				translateX:40
+			})
+			anime({
+				targets:'#tekan6',
+				opacity:0,
+				duration:500
+			})
+			var promise = morphing.finished.then(()=>{
+				goback2.onclick=function() {
+					var morphing = anime({
+				  targets: '.polymorph',
+				  points: [
+				    { value: ' 1058.585,517.352 0,517.352 0,0 242.423,0 1058.585,0' },
+				  ],
+				  easing: 'easeOutQuad',
+				  duration: 2000,
+				  loop: false
+				});
+					anime({
+						targets:'#design',
+						opacity:0
+					})
+					anime({
+						targets:'#hed',
+						opacity:1
+					})
+					anime({
+						targets:'#tekan',
+						opacity:1
+					})
+					anime({
+						targets:'#q2',
+						opacity:0
+					})
+					anime({
+						targets:'#tekan2',
+						opacity:1,
+						duration:500
+					})
+					anime({
+						targets:'#tekan6',
+						opacity:1,
+						duration:500
+					})
+					anime({
+						targets:'#tekan4',
+						opacity:1,
+						duration:500
+					})
+				}
+			});
+
+		}
+	</script>
+	<!--my design-->
+	<div id="design">
+		<h1 class="reg">One of my designs from requests and activities for the past 2.5 years</h1>
+		<div id="gallery2">
+		<a target="_blank" href="img/logo uie.png"><img src="img/logo uie.png"></a>
+		<div id="ket2">logo</div>
+		</div>
+		<div id="gallery2">
+		<a target="_blank" href="img/d&d.png"><img src="img/d&d.png"></a>
+		<div id="ket2">Foto</div>
+		</div>
+		<div id="gallery2">
+		<a target="_blank" href="img/menyambut ramadhan-2.png"><img src="img/menyambut ramadhan-2.png"></a>
+		<div id="ket2">pamflet</div>
+		</div>
+		<div id="gallery2">
+		<a target="_blank" href="img/piagam administrasi.png"><img src="img/piagam administrasi.png"></a>
+		<div id="ket2">Piagam</div>
+		</div>
+		<div id="gallery2">
+		<a target="_blank" href="img/pamflet futsal.png"><img src="img/pamflet futsal.png"></a>
+		<div id="ket2">pamflet</div>
+		</div>
+		<div id="gallery2">
+		<a target="_blank" href="img/life_plan.png"><img src="img/life_plan.png"></a>
+		<div id="ket2">life plan</div>
+		</div>
+		<div id="gallery2">
+		<a target="_blank" href="img/swot_pikri.png"><img src="img/swot_pikri.png"></a>
+		<div id="ket2">swot</div>
+		</div>
+		<div id="gallery2">
+		<a target="_blank" href="img/spanduk.png"><img src="img/spanduk.png"></a>
+		<div id="ket2">spanduk</div>
+		</div>
+		<div id="gallery2">
+		<a target="_blank" href="img/card.jpg"><img src="img/card.jpg"></a>
+		<div id="ket2">card</div>
+		</div>
+		<div id="gallery2">
+		<a target="_blank" href="img/poster kang ripki.png"><img src="img/poster kang ripki.png"></a>
+		<div id="ket2">poster</div>
+		</div>
+			<p class="gobak2"><a  id="goback2">Go Back</a></p>
+	</div>
+	<script type="text/javascript">
+		var tekan=document.getElementById('tekan2');
+		var goback2=document.getElementById('goback2');
+		tekan.onclick=function slide2() {
+			var morphing = anime({
+		  targets: '.polymorph',
+		  points: [
+		    { value: '1058.585,517.352 0,517.352 788.888,314.322 992.928,79.979 1058.585,0' },
+		  ],
+		  easing: 'easeOutQuad',
+		  duration: 2000,
+		  loop: false
+		});
+			anime({
+				targets:'#tekan',
+				opacity:0,
+				duration:500
+			})
+			anime({
+				targets:'#tekan2',
+				opacity:0,
+				duration:500
+			})
+			anime({
+				targets:'#tekan4',
+				opacity:0,
+				duration:500
+			})
+			anime({
+				targets:'#tekan6',
+				opacity:0,
+				duration:500
+			})
+			anime({
+				targets:'#hed',
+				opacity:0,
+				duration:500
+			})
+			anime({
+				targets:'#design',
+				opacity:1,
+				duration:1000,
+				translateY:600
+			})
+			anime({
+				targets:'#q2',
+				opacity:1,
+				translateX:40
+			})
+			var promise = morphing.finished.then(()=>{
+				goback2.onclick=function() {
+					var morphing = anime({
+				  targets: '.polymorph',
+				  points: [
+				    { value: ' 1058.585,517.352 0,517.352 0,0 242.423,0 1058.585,0' },
+				  ],
+				  easing: 'easeOutQuad',
+				  duration: 2000,
+				  loop: false
+				});
+					anime({
+				targets:'#tekan4',
+				opacity:1,
+				duration:500
+			})
+					anime({
+						targets:'#design',
+						opacity:0,
+						duration: 500,
+						translateY:-600
+					})
+					anime({
+						targets:'#hed',
+						opacity:1
+					})
+					anime({
+						targets:'#tekan',
+						opacity:1
+					})
+					anime({
+						targets:'#q2',
+						opacity:0
+					})
+					anime({
+						targets:'#tekan2',
+						opacity:1,
+						duration:500
+					})
+					
+					anime({
+						targets:'#tekan6',
+						opacity:1,
+						duration:500
+					})
+				}
+			});
+
+		}
+		var daf2=document.getElementById('daf2');
+		daf2.onclick=function slide5() {
+			var morphing=anime({
+				  targets: '.polymorph',
+				  points: [
+				    { value: '1058.585,517.352 0,517.352 0,0 101.009,101.19 338.383,329.473 ' },
+				  ],
+				  easing: 'easeOutQuad',
+				  duration: 2000,
+				  loop: false
+				});
+				anime({
+					targets:'#design',
+					opacity:0
+				})
+				anime({
+					targets:'#q2',
+					opacity:0
+				})
+				anime({
+				targets:'#login',
+				opacity:1,
+				duration:500,
+				translateX:400
+			})
+			anime({
+				targets:'#q1',
+				opacity:1,
+				translateX:100
+			})
+			anime({
+				targets:'#tekan6',
+				opacity:0,
+				duration:500
+			})
+		}
+	</script>
+	<!--script certificate-->
+	<script type="text/javascript">
+	var tekan4=document.getElementById('tekan4');
+		var goback3=document.getElementById('goback3');
+		tekan4.onclick=function slide4() {
+			var morphing = anime({
+		  targets: '.polymorph',
+		  points: [
+		    { value: '908.079,86.039 242.423,45.635 0,0 814.141,0 1058.585,0 1058.585,157.756' },
+		  ],
+		  easing: 'easeOutQuad',
+		  duration: 2000,
+		  loop: false
+		});
+			anime({
+				targets:'#tekan',
+				opacity:0,
+				duration:500
+			})
+			anime({
+				targets:'#tekan2',
+				opacity:0,
+				duration:500
+			})
+			anime({
+				targets:'#tekan3',
+				opacity:0,
+				duration:500
+			})
+			anime({
+				targets:'#tekan4',
+				opacity:0,
+				duration:500
+			})
+			anime({
+				targets:'#tekan6',
+				opacity:0,
+				duration:500
+			})
+			anime({
+				targets:'#hed',
+				opacity:0,
+				duration:500
+			})
+			anime({
+				targets:'#certificate',
+				opacity:1,
+				translateY:-500
+			})
+			anime({
+				targets:'#cert',
+				opacity:1
+			})
+			var promise = morphing.finished.then(()=>{
+				goback3.onclick=function() {
+					var morphing = anime({
+				  targets: '.polymorph',
+				  points: [
+				    { value: ' 1058.585,517.352 0,517.352 0,0 242.423,0 1058.585,0' },
+				  ],
+				  easing: 'easeOutQuad',
+				  duration: 2000,
+				  loop: false
+				});
+				anime({
+				targets:'#tekan4',
+				opacity:1,
+				duration:500
+				})
+					anime({
+						targets:'#hed',
+						opacity:1
+					})
+					anime({
+						targets:'#tekan',
+						opacity:1
+					})
+					anime({
+						targets:'#tekan2',
+						opacity:1,
+						duration:500
+					})
+					anime({
+						targets:'#certificate',
+						opacity:0,
+						duration:500,
+						translateY:500
+					})
+					anime({
+						targets:'#tekan6',
+						opacity:1,
+						duration:500
+					})
+					anime({
+						targets:'#cert',
+						opacity:0
+					})
+				}
+			});
+
+		}
+	</script>
+</body>
+</html>
